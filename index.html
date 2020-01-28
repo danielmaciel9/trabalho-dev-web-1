@@ -6,13 +6,18 @@
         <title>Cursos Lero Lero</title>
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/geral.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
     </head>
     <body>        
         <header>
             <img src="assets/imagens/leroleromarca.png" alt="Marca Lero Lero">
             <nav class="navbarLeroLero">
-                <ul>
+                <div id="menuMobile" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menuDesktop">
+                    <div style="display:none" class="closeMobMenu"><i class="fas fa-times"></i></div>
                     <li>
                         <a href="index.html">
                             Home
@@ -82,7 +87,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="assets/imagens/administracao.jpg" alt="Administracao">
+                            <img class="card-img-top" src="assets/imagens/biologia.jpg" alt="Administracao">
                             <div class="card-body">
                                 <h3>Curso de Biologia</h3>
                                 <p class="card-text">A formação abrange grandes áreas de atuação, meio ambiente e saúde.</p>
@@ -98,7 +103,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img class="card-img-top" src="assets/imagens/administracao.jpg" alt="Administracao">
+                            <img class="card-img-top" src="assets/imagens/direito.jpg" alt="Administracao">
                             <div class="card-body">
                                 <h3>Curso de Direito</h3>
                                 <p class="card-text">Habilidades que vão facilitar o acesso a carreiras, como a de Árbitro.</p>
