@@ -105,6 +105,43 @@ header .navbarLeroLero li>a{
     left: 0px;
     width: 320px;
 }
+#section2 .row{
+    margin-top: 40px;
+}
+#section2 h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+#section2 h4{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+#section2 p{
+    font-size: 14px;
+}
+#section2 .card-img-top{
+    max-height: 170px;
+    object-fit: cover;
+}
+#section2 .chipsClasses {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+#section2 .chipsClasses li{
+    background-color: #371B66;
+    padding: 10px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 5px;
+}
+#section2 .card{
+    margin-bottom: 20px;
+}
 /* Fim - Seção 2 */
 
 /* Footer */
