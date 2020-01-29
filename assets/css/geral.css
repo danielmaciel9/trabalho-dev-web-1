@@ -209,13 +209,14 @@ footer .copyrights{
 #aboutUs a{
     margin-top: 15px;
     background-color: #3B50BF;
-    padding: 20px 30px;
+    padding: 15px 20px;
     display: inline-block;
     color: #fff;
     border-radius: 12px;
     font-weight: 700;
     text-transform: uppercase;
     transition: 0.2s;
+    font-size: 16px;
     border: 2px solid #3B50BF;
 }
 #aboutUs a:hover{
@@ -263,6 +264,7 @@ footer .copyrights{
         display: block !important;
         transition: 0.2s;
         opacity: 1;
+        z-index: 99999;
         right: 0;
     }
     .closeMobMenu{
@@ -283,6 +285,19 @@ footer .copyrights{
     #section2 .card{
         min-height: 420px;
         margin-bottom: 30px;
+    }
+    #aboutUs img{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    #aboutUs .col-md-8{
+        order: 2;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #aboutUs .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
