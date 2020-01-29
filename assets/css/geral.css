@@ -4,6 +4,9 @@
 /* 3 - Seção 2 */
 /* 4 - Footer */
 
+
+/* Page - Sobre Nós */
+
 /* Responsivo */
 
 /* 1 - Header */
@@ -191,6 +194,37 @@ footer .copyrights{
 }
 /* Fim - Footer */
 
+/* Page - Sobre Nós */
+#aboutUs{
+    padding: 50px 0px;
+}
+#aboutUs .row{
+    display: flex;
+    align-items: center;
+}
+#aboutUs h2{
+    margin-top: 0px;
+    font-weight: 700;
+}
+#aboutUs a{
+    margin-top: 15px;
+    background-color: #3B50BF;
+    padding: 20px 30px;
+    display: inline-block;
+    color: #fff;
+    border-radius: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border: 2px solid #3B50BF;
+}
+#aboutUs a:hover{
+    text-decoration: none;
+    color: #3B50BF;
+    background-color: #fff;
+    transition: 0.2s;
+}
+/* Fim - Sobre Nós */
 
 /* Responsivo */
 @media (max-width: 1200px){
