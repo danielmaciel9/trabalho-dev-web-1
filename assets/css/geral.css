@@ -12,6 +12,7 @@
 /* Page - Instrutores */
 /* Page - Comentários */
 /* Page - Registro */
+/* Page - Tabelas */
 
 /* Responsivo */
 
@@ -666,6 +667,96 @@ footer .copyrights{
 }
 /* Fim - Registro */
 
+/* Page - Tabelas */
+#formTables{
+    padding: 40px 0px;
+}
+#formTables h2{
+    margin-top: 0px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+}
+#formTables label{
+    margin-top: 10px;
+}
+#formTables h2:after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background-color: #FFD728;
+    height: 18px;
+    bottom: 0px;
+    left: 0px;
+    width: 200px;
+}
+#formTables input{
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 20px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#formTables select{
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 20px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    height: 50px;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#formTables .btn{
+    background-color: #9A5CFF;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(154,92,255,0.4);
+    box-shadow: 0 10px 30px 0 rgba(154,92,255,0.4);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 30px auto 15px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#formTables .btn:hover{
+    background-color: #6C40B3;
+}
+#formTables .nav-pills .nav-link.active{
+    background-color: #3B50BF;
+    color: #fff;
+}
+#formTables .nav-pills a{
+    color: #3B50BF;
+}
+#formTables #v-pills-tab{
+    margin-bottom: 30px;
+}
+/* Fim - Tabelas */
+
 /* Responsivo */
 @media (max-width: 1200px){
     #section2 .card{
@@ -741,6 +832,9 @@ footer .copyrights{
     #instructors .col-md-3{
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    #commentsSection .boxDepoimentos{
+        text-align: center;
     }
 }
 

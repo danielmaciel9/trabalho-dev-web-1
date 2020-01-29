@@ -11,6 +11,7 @@ $(document).ready(function(){
     $('#inputCpf').mask('000.000.000-00', {reverse: true});
     $('#cep').mask('00000-000');
 
+    $('.datepicker').datepicker();
 
     // Função de puxar infos automáticas através do CEP
     function limpa_formulário_cep() {

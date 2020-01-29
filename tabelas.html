@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Cursos Lero Lero</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/geral.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&display=swap" rel="stylesheet">
+    </head>
+    <body>        
+        <header>
+            <img src="assets/imagens/leroleromarca.png" alt="Marca Lero Lero">
+            <nav class="navbarLeroLero">
+                <div id="menuMobile" style="display: none;">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="menuDesktop">
+                    <div style="display:none" class="closeMobMenu"><i class="fas fa-times"></i></div>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">
+                            Sobre
+                        </a>
+                    </li>
+                    <li>
+                        <a href="instrutores.html">
+                            Instrutores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comentarios.html">
+                            Comentários
+                        </a>
+                    </li>
+                    <li>
+                        <a href="registro.html">
+                            Registro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tabelas.html">
+                            Tabelas
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="formTables">
+            <div class="container">
+                <h2>Tabelas</h2>
+                <div class="alert alert-warning" role="alert">
+                    <strong>Atenção:</strong> Todos os campos com "*" são obrigatórios.
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Criar Administrador</a>
+                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Criar Matrículas</a>
+                            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Criar Cursos</a>
+                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Criar Instrutores</a>
+                            <a class="nav-link" id="v-pills-classes-tab" data-toggle="pill" href="#v-pills-classes" role="tab" aria-controls="v-pills-classes" aria-selected="false">Criar Turmas</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nomeAdmin">*Nome:</label>
+                                        <input type="text" class="form-control" id="nomeAdmin" name="nomeAdmin" placeholder="Digite seu nome" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginAdmin">*Login:</label>
+                                        <input type="text" class="form-control" id="loginAdmin" name="loginAdmin" placeholder="Digite seu login" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senhaAdmin">*Senha:</label>
+                                        <input type="text" class="form-control" id="senhaAdmin" name="senhaAdmin" placeholder="Digite sua senha" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Criar</button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="turmaMatricula">Turma:</label>
+                                        <select id="turmaMatricula">
+                                            <option selected>Selecione uma turma</option>
+                                            <option value="1">Turma A</option>
+                                            <option value="2">Turma B</option>
+                                            <option value="3">Turma C</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="alunoMatricula">Aluno:</label>
+                                        <select id="alunoMatricula">
+                                            <option selected>Selecione um aluno</option>
+                                            <option value="1">Daniel Maciel</option>
+                                            <option value="2">Isabella Cunha</option>
+                                            <option value="3">Joel Santana</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dataMatricula">Data da matrícula</label>
+                                        <input class="form-control" type="date" value="2011-08-19" id="dataMatricula">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="notaMatricula">Nota:</label>
+                                        <input type="number" class="form-control" id="notaMatricula" name="notaMatricula" placeholder="Digite a nota" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Criar</button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nomeCurso">*Nome:</label>
+                                        <input type="text" class="form-control" id="nomeCurso" name="nomeCurso" placeholder="Digite o nome do curso" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="requisitoCurso">*Requisito:</label>
+                                        <input type="text" class="form-control" id="requisitoCurso" name="requisitoCurso" placeholder="Digite o requisito do curso" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ementaCurso">*Ementa:</label>
+                                        <input type="text" class="form-control" id="ementaCurso" name="ementaCurso" placeholder="Digite a ementa do curso" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cargaCurso">*Carga Horária:</label>
+                                        <input type="number" class="form-control" id="cargaCurso" name="cargaCurso" placeholder="Digite a carga horária do curso" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="precoCurso">*Preço:</label>
+                                        <input type="number" class="form-control" id="precoCurso" name="precoCurso" placeholder="Digite o preço do curso" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Criar</button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="nomeInstrutor">*Nome:</label>
+                                        <input type="text" class="form-control" id="nomeInstrutor" name="nomeInstrutor" placeholder="Digite o nome do instrutor" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailInstrutor">*Email:</label>
+                                        <input type="text" class="form-control" id="emailInstrutor" name="emailInstrutor" placeholder="Digite o email do instrutor" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="valorHoraInstrutor">*Valor hora:</label>
+                                        <input type="number" class="form-control" id="valorHoraInstrutor" name="valorHoraInstrutor" placeholder="Digite o valor/hora do instrutor" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginInstrutor">*Login:</label>
+                                        <input type="text" class="form-control" id="loginInstrutor" name="loginInstrutor" placeholder="Digite o login do instrutor" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="senhaInstrutor">*Senha:</label>
+                                        <input type="password" class="form-control" id="senhaInstrutor" name="senhaInstrutor" placeholder="Digite a senha do instrutor" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Criar</button>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="v-pills-classes" role="tabpanel" aria-labelledby="v-pills-classes-tab">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="instrutorTurma">Instrutore da turma:</label>
+                                        <select id="instrutorTurma">
+                                            <option selected>Selecione um instrutor</option>
+                                            <option value="1">João Heliósio</option>
+                                            <option value="2">Carla Buter</option>
+                                            <option value="3">Jonson Carli</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cursoTurma">Curso da turma:</label>
+                                        <select id="cursoTurma">
+                                            <option selected>Selecione um curso</option>
+                                            <option value="1">Administração</option>
+                                            <option value="2">Biologia</option>
+                                            <option value="3">Direito</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dataInicio">Data de início</label>
+                                        <input class="form-control" type="date" value="2011-08-19" id="dataInicio">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dataFim">Data de Fim</label>
+                                        <input class="form-control" type="date" value="2011-08-19" id="dataFim">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cargaTurma">*Carga Horária:</label>
+                                        <input type="number" class="form-control" id="cargaTurma" name="cargaTurma" placeholder="Digite a carga horária do curso" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Criar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Fale com a gente</h3>
+                        <a href="mailto:danielmaciel.siuff@gmail.com">danielmaciel.siuff@gmail.com</a>
+                        <p><img src="assets/imagens/whatsapp.png" alt="Whatsapp"> +55 21 96897-5335</p>
+                        <a href="#">
+                            <div class="instagramTalk">
+                                <img src="assets/imagens/instagram.png" alt="Instagram"> Confira nosso instagram!
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/imagens/leroleromarca.png" alt="Marca Lero Lero">
+                        <h3>Nos faça uma visita</h3>
+                        <p>R. Passo da Pátria, 152-470, <br>São Domingos, Niterói - RJ, 24210-240</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights">
+                © 2019 Cursos Lero Lero. All rights reserved.
+            </div>
+        </footer>
+    </body>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.mask.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/geral.js"></script>
+</html>
