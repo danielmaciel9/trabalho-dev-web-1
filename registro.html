@@ -59,54 +59,57 @@
         <section id="registroSection">
            <div class="container">
                 <h2>Fazer Registro</h2>
+                <div class="alert alert-warning" role="alert">
+                    <strong>Atenção:</strong> Todos os campos com "*" são obrigatórios.
+                </div>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4">Nome:</label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Nome">
+                            <label for="inputEmail4">*Nome:</label>
+                            <input type="text" class="form-control" id="inputEmail4" placeholder="Nome" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputCpf">CPF:</label>
-                            <input type="text" class="form-control" id="inputCpf" placeholder="CPF">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputAddress">Login:</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Login">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="inputPassword4">Senha:</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                            <label for="inputCpf">*CPF:</label>
+                            <input type="text" class="form-control" id="inputCpf" placeholder="CPF" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4">Email:</label>
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            <label for="inputAddress">*Login:</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Login" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPassword4">Telefone:</label>
-                            <input type="text" class="form-control" id="telefoneInput" placeholder="Telefone">
+                            <label for="inputPassword4">*Senha:</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">*Email:</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">*Telefone:</label>
+                            <input type="text" class="form-control" id="telefoneInput" placeholder="Telefone" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-2">
-                            <label for="cep">CEP:</label>
-                            <input type="text" name="cep" class="form-control" id="cep" placeholder="CEP">
+                            <label for="cep">*CEP:</label>
+                            <input type="text" name="cep" class="form-control" id="cep" placeholder="CEP" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade">
+                            <label for="cidade">*Cidade</label>
+                            <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="bairro">Bairro</label>
-                            <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro">
+                            <label for="bairro">*Bairro</label>
+                            <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="rua">Endereço</label>
-                        <input type="text" class="form-control" id="rua" name="rua" placeholder="Endereço">
+                        <label for="rua">*Endereço</label>
+                        <input type="text" class="form-control" id="rua" name="rua" placeholder="Endereço" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Registrar</button>
                 </form>
