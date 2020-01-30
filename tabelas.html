@@ -76,7 +76,7 @@
                     <div class="col-md-9">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                <form>
+                                <form id="adminForm">
                                     <div class="form-group">
                                         <label for="nomeAdmin">*Nome:</label>
                                         <input type="text" class="form-control" id="nomeAdmin" name="nomeAdmin" placeholder="Digite seu nome" required>
@@ -87,27 +87,27 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="senhaAdmin">*Senha:</label>
-                                        <input type="text" class="form-control" id="senhaAdmin" name="senhaAdmin" placeholder="Digite sua senha" required>
+                                        <input type="password" class="form-control" id="senhaAdmin" name="senhaAdmin" placeholder="Digite sua senha" required>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Criar</button>
                                 </form>
                             </div>
 
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                <form>
+                                <form id="classForm">
                                     <div class="form-group">
-                                        <label for="turmaMatricula">Turma:</label>
-                                        <select id="turmaMatricula">
-                                            <option selected>Selecione uma turma</option>
+                                        <label for="turmaMatricula">*Turma:</label>
+                                        <select id="turmaMatricula" name="turmaMatricula" required>
+                                            <option selected value="">Selecione uma turma</option>
                                             <option value="1">Turma A</option>
                                             <option value="2">Turma B</option>
                                             <option value="3">Turma C</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="alunoMatricula">Aluno:</label>
-                                        <select id="alunoMatricula">
-                                            <option selected>Selecione um aluno</option>
+                                        <label for="alunoMatricula">*Aluno:</label>
+                                        <select id="alunoMatricula" name="alunoMatricula" required>
+                                            <option selected value="">Selecione um aluno</option>
                                             <option value="1">Daniel Maciel</option>
                                             <option value="2">Isabella Cunha</option>
                                             <option value="3">Joel Santana</option>
@@ -115,55 +115,55 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="dataMatricula">Data da matrícula</label>
-                                        <input class="form-control" type="date" value="2011-08-19" id="dataMatricula">
+                                        <input class="form-control" type="date" id="dataMatricula" name="dataMatricula">
                                     </div>
                                     <div class="form-group">
                                         <label for="notaMatricula">Nota:</label>
-                                        <input type="number" class="form-control" id="notaMatricula" name="notaMatricula" placeholder="Digite a nota" required>
+                                        <input type="number" class="form-control" id="notaMatricula" name="notaMatricula" placeholder="Digite a nota">
                                     </div>
                                     <button type="submit" class="btn btn-primary">Criar</button>
                                 </form>
                             </div>
 
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                <form>
+                                <form id="courseForm">
                                     <div class="form-group">
                                         <label for="nomeCurso">*Nome:</label>
                                         <input type="text" class="form-control" id="nomeCurso" name="nomeCurso" placeholder="Digite o nome do curso" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="requisitoCurso">*Requisito:</label>
-                                        <input type="text" class="form-control" id="requisitoCurso" name="requisitoCurso" placeholder="Digite o requisito do curso" required>
+                                        <label for="requisitoCurso">Requisito:</label>
+                                        <input type="text" class="form-control" id="requisitoCurso" name="requisitoCurso" placeholder="Digite o requisito do curso">
                                     </div>
                                     <div class="form-group">
-                                        <label for="ementaCurso">*Ementa:</label>
-                                        <input type="text" class="form-control" id="ementaCurso" name="ementaCurso" placeholder="Digite a ementa do curso" required>
+                                        <label for="ementaCurso">Ementa:</label>
+                                        <input type="text" class="form-control" id="ementaCurso" name="ementaCurso" placeholder="Digite a ementa do curso">
                                     </div>
                                     <div class="form-group">
-                                        <label for="cargaCurso">*Carga Horária:</label>
-                                        <input type="number" class="form-control" id="cargaCurso" name="cargaCurso" placeholder="Digite a carga horária do curso" required>
+                                        <label for="cargaCurso">Carga Horária:</label>
+                                        <input type="number" class="form-control" id="cargaCurso" name="cargaCurso" placeholder="Digite a carga horária do curso">
                                     </div>
                                     <div class="form-group">
-                                        <label for="precoCurso">*Preço:</label>
-                                        <input type="number" class="form-control" id="precoCurso" name="precoCurso" placeholder="Digite o preço do curso" required>
+                                        <label for="precoCurso">Preço:</label>
+                                        <input type="number" class="form-control" id="precoCurso" name="precoCurso" placeholder="Digite o preço do curso">
                                     </div>
                                     <button type="submit" class="btn btn-primary">Criar</button>
                                 </form>
                             </div>
 
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                <form>
+                                <form id="instrutorForm">
                                     <div class="form-group">
                                         <label for="nomeInstrutor">*Nome:</label>
                                         <input type="text" class="form-control" id="nomeInstrutor" name="nomeInstrutor" placeholder="Digite o nome do instrutor" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="emailInstrutor">*Email:</label>
-                                        <input type="text" class="form-control" id="emailInstrutor" name="emailInstrutor" placeholder="Digite o email do instrutor" required>
+                                        <input type="email" class="form-control" id="emailInstrutor" name="emailInstrutor" placeholder="Digite o email do instrutor" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="valorHoraInstrutor">*Valor hora:</label>
-                                        <input type="number" class="form-control" id="valorHoraInstrutor" name="valorHoraInstrutor" placeholder="Digite o valor/hora do instrutor" required>
+                                        <label for="valorHoraInstrutor">Valor hora:</label>
+                                        <input type="number" class="form-control" id="valorHoraInstrutor" name="valorHoraInstrutor" placeholder="Digite o valor/hora do instrutor">
                                     </div>
                                     <div class="form-group">
                                         <label for="loginInstrutor">*Login:</label>
@@ -178,20 +178,20 @@
                             </div>
 
                             <div class="tab-pane fade" id="v-pills-classes" role="tabpanel" aria-labelledby="v-pills-classes-tab">
-                                <form>
+                                <form id="classInstrutorForm">
                                     <div class="form-group">
-                                        <label for="instrutorTurma">Instrutore da turma:</label>
-                                        <select id="instrutorTurma">
-                                            <option selected>Selecione um instrutor</option>
+                                        <label for="instrutorTurma">*Instrutor da turma:</label>
+                                        <select id="instrutorTurma" name="instrutorTurma" required>
+                                            <option selected value="">Selecione um instrutor</option>
                                             <option value="1">João Heliósio</option>
                                             <option value="2">Carla Buter</option>
                                             <option value="3">Jonson Carli</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="cursoTurma">Curso da turma:</label>
-                                        <select id="cursoTurma">
-                                            <option selected>Selecione um curso</option>
+                                        <label for="cursoTurma">*Curso da turma:</label>
+                                        <select id="cursoTurma" name="cursoTurma" required>
+                                            <option selected value="">Selecione um curso</option>
                                             <option value="1">Administração</option>
                                             <option value="2">Biologia</option>
                                             <option value="3">Direito</option>
@@ -199,15 +199,15 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="dataInicio">Data de início</label>
-                                        <input class="form-control" type="date" value="2011-08-19" id="dataInicio">
+                                        <input class="form-control" type="date" id="dataInicio" name="dataInicio">
                                     </div>
                                     <div class="form-group">
                                         <label for="dataFim">Data de Fim</label>
-                                        <input class="form-control" type="date" value="2011-08-19" id="dataFim">
+                                        <input class="form-control" type="date" id="dataFim" name="dataFim">
                                     </div>
                                     <div class="form-group">
-                                        <label for="cargaTurma">*Carga Horária:</label>
-                                        <input type="number" class="form-control" id="cargaTurma" name="cargaTurma" placeholder="Digite a carga horária do curso" required>
+                                        <label for="cargaTurma">Carga Horária:</label>
+                                        <input type="number" class="form-control" id="cargaTurma" name="cargaTurma" placeholder="Digite a carga horária do curso">
                                     </div>
                                     <button type="submit" class="btn btn-primary">Criar</button>
                                 </form>
@@ -243,6 +243,7 @@
         </footer>
     </body>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
     <script src="assets/js/jquery.mask.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/geral.js"></script>

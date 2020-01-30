@@ -630,7 +630,6 @@ footer .copyrights{
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
-    padding: 20px 32px;
     text-decoration: none;
     font-size: 16px;
     width: 100%;
@@ -709,7 +708,6 @@ footer .copyrights{
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
-    padding: 20px 32px;
     text-decoration: none;
     font-size: 16px;
     height: 50px;
@@ -754,6 +752,9 @@ footer .copyrights{
 }
 #formTables #v-pills-tab{
     margin-bottom: 30px;
+}
+form .error{
+    color: red;
 }
 /* Fim - Tabelas */
 
