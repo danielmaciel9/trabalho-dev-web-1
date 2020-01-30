@@ -758,6 +758,20 @@ form .error{
 }
 /* Fim - Tabelas */
 
+#thankSection{
+    padding: 50px;
+    text-align: center;
+}
+#thankSection .far{
+    color: #FFD728;
+    font-size: 50px;
+}
+#thankSection h1{
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center;
+}
+
 /* Responsivo */
 @media (max-width: 1200px){
     #section2 .card{
@@ -840,6 +854,9 @@ form .error{
 }
 
 @media (max-width: 767px){
+    #thankSection h1{
+        font-size: 28px;
+    }
     .col-md-4{
         flex: 0 0 100%;
         max-width: 100%;
