@@ -13,6 +13,7 @@
 /* Page - Comentários */
 /* Page - Registro */
 /* Page - Tabelas */
+/* Page - Obrigado */
 
 /* Responsivo */
 
@@ -758,6 +759,7 @@ form .error{
 }
 /* Fim - Tabelas */
 
+/* Page - Obrigado */
 #thankSection{
     padding: 50px;
     text-align: center;
@@ -771,6 +773,7 @@ form .error{
     margin-top: 15px;
     text-align: center;
 }
+/* Fim - Obrigado */
 
 /* Responsivo */
 @media (max-width: 1200px){
